@@ -1,0 +1,113 @@
+2022-04-20 14:01:28 INFO  SPCaller:30 - ===========================Start===============================
+2022-04-20 14:01:28 INFO  SPCaller:41 - Store procedure names:"test", "PKG_BATCH_VIDB.PRC_VI_APPLY_CASE_RESULT_CAP"
+2022-04-20 14:01:28 INFO  SPCaller:46 - Try to get config file
+2022-04-20 14:01:28 INFO  SPCaller:54 - ok
+2022-04-20 14:01:30 ERROR SPCaller:86 - 無法啟動「通用連線集區」: oracle.ucp.UniversalConnectionPoolException: 無法從資料來源取得連線: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+java.sql.SQLException: 無法啟動「通用連線集區」: oracle.ucp.UniversalConnectionPoolException: 無法從資料來源取得連線: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.ucp.util.UCPErrorHandler.newSQLException(UCPErrorHandler.java:456) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.util.UCPErrorHandler.throwSQLException(UCPErrorHandler.java:133) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.startPool(PoolDataSourceImpl.java:930) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.getConnection(PoolDataSourceImpl.java:1964) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.access$400(PoolDataSourceImpl.java:202) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl$31.build(PoolDataSourceImpl.java:4284) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.getConnection(PoolDataSourceImpl.java:1920) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.getConnection(PoolDataSourceImpl.java:1883) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.getConnection(PoolDataSourceImpl.java:1868) ~[ucp.jar:19.13.0.0.0]
+	at store_proc_caller.SPCaller.main(SPCaller.java:79) [bin/:?]
+Caused by: oracle.ucp.UniversalConnectionPoolException: 無法從資料來源取得連線: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.ucp.util.UCPErrorHandler.newUniversalConnectionPoolException(UCPErrorHandler.java:336) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.util.UCPErrorHandler.throwUniversalConnectionPoolException(UCPErrorHandler.java:59) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.oracle.OracleDataSourceConnectionFactoryAdapter.createConnection(OracleDataSourceConnectionFactoryAdapter.java:135) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.Database.createPooledConnection(Database.java:256) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.Topology.start(Topology.java:279) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.Core.start(Core.java:2395) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.UniversalConnectionPoolBase.start(UniversalConnectionPoolBase.java:690) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.oracle.OracleJDBCConnectionPool.start(OracleJDBCConnectionPool.java:129) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.startPool(PoolDataSourceImpl.java:926) ~[ucp.jar:19.13.0.0.0]
+	... 7 more
+Caused by: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:509) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:456) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:451) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1118) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:553) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:553) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:269) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:502) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1309) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1026) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:763) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:807) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:77) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:767) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.pool.OracleDataSource.getPhysicalConnection(OracleDataSource.java:450) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.pool.OracleDataSource.getConnection(OracleDataSource.java:324) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.pool.OracleDataSource$1.build(OracleDataSource.java:1778) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.pool.OracleDataSource$1.build(OracleDataSource.java:1764) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.oracle.OracleDataSourceConnectionFactoryAdapter.createConnection(OracleDataSourceConnectionFactoryAdapter.java:104) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.Database.createPooledConnection(Database.java:256) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.Topology.start(Topology.java:279) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.Core.start(Core.java:2395) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.UniversalConnectionPoolBase.start(UniversalConnectionPoolBase.java:690) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.oracle.OracleJDBCConnectionPool.start(OracleJDBCConnectionPool.java:129) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.startPool(PoolDataSourceImpl.java:926) ~[ucp.jar:19.13.0.0.0]
+	... 7 more
+2022-04-20 14:01:31 ERROR SPCaller:86 - 無法啟動「通用連線集區」: oracle.ucp.UniversalConnectionPoolException: 無法從資料來源取得連線: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+java.sql.SQLException: 無法啟動「通用連線集區」: oracle.ucp.UniversalConnectionPoolException: 無法從資料來源取得連線: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.ucp.util.UCPErrorHandler.newSQLException(UCPErrorHandler.java:456) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.util.UCPErrorHandler.throwSQLException(UCPErrorHandler.java:133) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.startPool(PoolDataSourceImpl.java:930) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.getConnection(PoolDataSourceImpl.java:1964) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.access$400(PoolDataSourceImpl.java:202) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl$31.build(PoolDataSourceImpl.java:4284) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.getConnection(PoolDataSourceImpl.java:1920) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.getConnection(PoolDataSourceImpl.java:1883) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.getConnection(PoolDataSourceImpl.java:1868) ~[ucp.jar:19.13.0.0.0]
+	at store_proc_caller.SPCaller.main(SPCaller.java:79) [bin/:?]
+Caused by: oracle.ucp.UniversalConnectionPoolException: 無法從資料來源取得連線: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.ucp.util.UCPErrorHandler.newUniversalConnectionPoolException(UCPErrorHandler.java:336) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.util.UCPErrorHandler.throwUniversalConnectionPoolException(UCPErrorHandler.java:59) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.oracle.OracleDataSourceConnectionFactoryAdapter.createConnection(OracleDataSourceConnectionFactoryAdapter.java:135) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.Database.createPooledConnection(Database.java:256) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.Topology.start(Topology.java:279) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.Core.start(Core.java:2395) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.UniversalConnectionPoolBase.start(UniversalConnectionPoolBase.java:690) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.oracle.OracleJDBCConnectionPool.start(OracleJDBCConnectionPool.java:129) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.startPool(PoolDataSourceImpl.java:926) ~[ucp.jar:19.13.0.0.0]
+	... 7 more
+Caused by: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:509) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:456) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:451) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1118) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:553) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:553) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:269) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:502) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1309) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1026) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:763) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:807) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:77) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:767) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.pool.OracleDataSource.getPhysicalConnection(OracleDataSource.java:450) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.pool.OracleDataSource.getConnection(OracleDataSource.java:324) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.pool.OracleDataSource$1.build(OracleDataSource.java:1778) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.jdbc.pool.OracleDataSource$1.build(OracleDataSource.java:1764) ~[ojdbc8.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.oracle.OracleDataSourceConnectionFactoryAdapter.createConnection(OracleDataSourceConnectionFactoryAdapter.java:104) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.Database.createPooledConnection(Database.java:256) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.Topology.start(Topology.java:279) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.Core.start(Core.java:2395) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.common.UniversalConnectionPoolBase.start(UniversalConnectionPoolBase.java:690) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.oracle.OracleJDBCConnectionPool.start(OracleJDBCConnectionPool.java:129) ~[ucp.jar:19.13.0.0.0]
+	at oracle.ucp.jdbc.PoolDataSourceImpl.startPool(PoolDataSourceImpl.java:926) ~[ucp.jar:19.13.0.0.0]
+	... 7 more
+2022-04-20 14:01:31 INFO  SPCaller:89 - All tasks have been completed.

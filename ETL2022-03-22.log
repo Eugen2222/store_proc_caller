@@ -1,0 +1,172 @@
+2022-03-22 09:28:08 INFO  SPCaller:30 - =====================Start ETL===============================
+2022-03-22 09:28:08 INFO  SPCaller:35 - Try to get config file
+2022-03-22 09:28:08 INFO  SPCaller:43 - ok
+2022-03-22 09:29:31 INFO  SPCaller:30 - =====================Start ETL===============================
+2022-03-22 09:29:31 INFO  SPCaller:35 - Try to get config file
+2022-03-22 09:29:31 INFO  SPCaller:43 - ok
+2022-03-22 09:29:50 INFO  SPCaller:30 - =====================Start ETL===============================
+2022-03-22 09:29:50 INFO  SPCaller:35 - Try to get config file
+2022-03-22 09:29:50 INFO  SPCaller:43 - ok
+2022-03-22 09:31:36 INFO  SPCaller:30 - =====================Start ETL===============================
+2022-03-22 09:31:36 INFO  SPCaller:35 - Try to get config file
+2022-03-22 09:31:36 INFO  SPCaller:43 - ok
+2022-03-22 09:31:58 ERROR SPCaller:74 - java.sql.SQLException: 無法啟動「通用連線集區」: oracle.ucp.UniversalConnectionPoolException: 無法從資料來源取得連線: java.sql.SQLRecoverableException: IO 錯誤: The Network Adapter could not establish the connection
+2022-03-22 09:37:22 INFO  SPCaller:30 - =====================Start ETL===============================
+2022-03-22 09:37:22 INFO  SPCaller:35 - Try to get config file
+2022-03-22 09:37:22 INFO  SPCaller:43 - ok
+2022-03-22 09:37:27 INFO  SPCaller:68 - Trying to call store proceduretest.
+2022-03-22 09:37:27 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'TEST'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:37:27 INFO  SPCaller:68 - Trying to call store procedurePKG_BATCH_RPT.
+2022-03-22 09:37:27 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00221: 'PKG_BATCH_RPT' 不是程序或未定義
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:38:01 INFO  SPCaller:30 - =====================Start ETL===============================
+2022-03-22 09:38:01 INFO  SPCaller:35 - Try to get config file
+2022-03-22 09:38:01 INFO  SPCaller:43 - ok
+2022-03-22 09:38:06 INFO  SPCaller:68 - Trying to call store procedure: 'test'.
+2022-03-22 09:38:07 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'TEST'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:38:07 INFO  SPCaller:68 - Trying to call store procedure: 'PKG_BATCH_RPT'.
+2022-03-22 09:38:07 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00221: 'PKG_BATCH_RPT' 不是程序或未定義
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:39:54 INFO  SPCaller:30 - =====================Start ETL===============================
+2022-03-22 09:39:54 INFO  SPCaller:35 - Try to get config file
+2022-03-22 09:39:54 INFO  SPCaller:43 - ok
+2022-03-22 09:39:58 INFO  SPCaller:68 - Trying to call store procedure: 'test'.
+2022-03-22 09:39:59 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'TEST'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:39:59 INFO  SPCaller:68 - Trying to call store procedure: 'PRC_INS_JOB_STATUS_BK'.
+2022-03-22 09:39:59 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'PRC_INS_JOB_STATUS_BK'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:41:34 INFO  SPCaller:30 - =====================Start ETL===============================
+2022-03-22 09:41:34 INFO  SPCaller:35 - Try to get config file
+2022-03-22 09:41:34 INFO  SPCaller:43 - ok
+2022-03-22 09:41:38 INFO  SPCaller:68 - Trying to call store procedure: 'test'.
+2022-03-22 09:41:38 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'TEST'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:41:38 INFO  SPCaller:68 - Trying to call store procedure: 'PKG_BATCH_RPT.PRC_INS_JOB_STATUS_BK'.
+2022-03-22 09:41:39 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 21 個欄位: 
+PLS-00302: 必須宣告元件 'PRC_INS_JOB_STATUS_BK'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:47:53 INFO  SPCaller:30 - =====================Start ETL===============================
+2022-03-22 09:47:53 INFO  SPCaller:35 - Try to get config file
+2022-03-22 09:47:53 INFO  SPCaller:43 - ok
+2022-03-22 09:47:57 INFO  SPCaller:68 - Trying to call store procedure: 'test'.
+2022-03-22 09:47:57 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'TEST'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:47:57 INFO  SPCaller:68 - Trying to call store procedure: 'PKG_BATCH_RPT.PRC_INS_JOB_STATUS_BK'.
+2022-03-22 09:47:57 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 21 個欄位: 
+PLS-00302: 必須宣告元件 'PRC_INS_JOB_STATUS_BK'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:48:06 INFO  SPCaller:30 - =====================Start ETL===============================
+2022-03-22 09:48:06 INFO  SPCaller:35 - Try to get config file
+2022-03-22 09:48:06 INFO  SPCaller:43 - ok
+2022-03-22 09:48:12 INFO  SPCaller:68 - Trying to call store procedure: 'test'.
+2022-03-22 09:48:12 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'TEST'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:48:12 INFO  SPCaller:68 - Trying to call store procedure: 'PRC_VI_APPLY_CASE_RESULT_CAP'.
+2022-03-22 09:48:13 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'PRC_VI_APPLY_CASE_RESULT_CAP'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:50:02 INFO  SPCaller:30 - =====================Start ETL===============================
+2022-03-22 09:50:02 INFO  SPCaller:35 - Try to get config file
+2022-03-22 09:50:02 INFO  SPCaller:43 - ok
+2022-03-22 09:50:07 INFO  SPCaller:68 - Trying to call store procedure: 'test'.
+2022-03-22 09:50:08 ERROR SPCaller:74 - java.sql.SQLException: ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'TEST'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 09:50:08 INFO  SPCaller:68 - Trying to call store procedure: 'PKG_BATCH_VIDB.PRC_VI_APPLY_CASE_RESULT_CAP'.
+2022-03-22 10:03:20 INFO  SPCaller:30 - =====================Start===============================
+2022-03-22 10:03:20 INFO  SPCaller:41 - Store procedure names:"test", "PKG_BATCH_VIDB.PRC_VI_APPLY_CASE_RESULT_CAP"
+2022-03-22 10:03:20 INFO  SPCaller:46 - Try to get config file
+2022-03-22 10:03:20 INFO  SPCaller:54 - ok
+2022-03-22 10:03:24 INFO  SPCaller:79 - Trying to call store procedure: 'test'.
+2022-03-22 10:03:24 ERROR SPCaller:85 - ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'TEST'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 10:03:24 INFO  SPCaller:79 - Trying to call store procedure: 'PKG_BATCH_VIDB.PRC_VI_APPLY_CASE_RESULT_CAP'.
+2022-03-22 10:03:26 INFO  SPCaller:83 - Completed.
+2022-03-22 10:03:26 INFO  SPCaller:88 - All tasks have been finished
+2022-03-22 10:05:34 INFO  SPCaller:30 - =====================Start===============================
+2022-03-22 10:05:34 INFO  SPCaller:41 - Store procedure names:"test", "PKG_BATCH_VIDB.PRC_VI_APPLY_CASE_RESULT_CAP"
+2022-03-22 10:05:34 INFO  SPCaller:46 - Try to get config file
+2022-03-22 10:05:34 INFO  SPCaller:54 - ok
+2022-03-22 10:05:38 INFO  SPCaller:79 - Trying to call store procedure: 'test'.
+2022-03-22 10:05:38 ERROR SPCaller:85 - ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'TEST'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 10:05:38 INFO  SPCaller:79 - Trying to call store procedure: 'PKG_BATCH_VIDB.PRC_VI_APPLY_CASE_RESULT_CAP'.
+2022-03-22 10:05:39 INFO  SPCaller:83 - Completed.
+2022-03-22 10:05:39 INFO  SPCaller:88 - All tasks have been ompleted.
+2022-03-22 10:05:50 INFO  SPCaller:30 - =====================Start===============================
+2022-03-22 10:05:50 INFO  SPCaller:41 - Store procedure names:"test", "PKG_BATCH_VIDB.PRC_VI_APPLY_CASE_RESULT_CAP"
+2022-03-22 10:05:50 INFO  SPCaller:46 - Try to get config file
+2022-03-22 10:05:50 INFO  SPCaller:54 - ok
+2022-03-22 10:05:55 INFO  SPCaller:79 - Trying to call store procedure: 'test'.
+2022-03-22 10:05:56 ERROR SPCaller:85 - ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'TEST'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 10:05:56 INFO  SPCaller:79 - Trying to call store procedure: 'PKG_BATCH_VIDB.PRC_VI_APPLY_CASE_RESULT_CAP'.
+2022-03-22 10:05:56 INFO  SPCaller:30 - =====================Start===============================
+2022-03-22 10:05:56 INFO  SPCaller:41 - Store procedure names:"test", "PKG_BATCH_VIDB.PRC_VI_APPLY_CASE_RESULT_CAP"
+2022-03-22 10:05:56 INFO  SPCaller:46 - Try to get config file
+2022-03-22 10:05:56 INFO  SPCaller:54 - ok
+2022-03-22 10:05:57 INFO  SPCaller:83 - Completed.
+2022-03-22 10:05:57 INFO  SPCaller:88 - All tasks have been ompleted.
+2022-03-22 10:06:00 INFO  SPCaller:79 - Trying to call store procedure: 'test'.
+2022-03-22 10:06:00 ERROR SPCaller:85 - ORA-06550: 第 1 行, 第 7 個欄位: 
+PLS-00201: 必須宣告識別項 'TEST'
+ORA-06550: 第 1 行, 第 7 個欄位: 
+PL/SQL: Statement ignored
+
+2022-03-22 10:06:00 INFO  SPCaller:79 - Trying to call store procedure: 'PKG_BATCH_VIDB.PRC_VI_APPLY_CASE_RESULT_CAP'.
+2022-03-22 10:06:02 INFO  SPCaller:83 - Completed.
+2022-03-22 10:06:02 INFO  SPCaller:88 - All tasks have been ompleted.
+2022-03-22 16:28:34 INFO  SPCaller:30 - =====================Start===============================
+2022-03-22 16:28:34 INFO  SPCaller:41 - Store procedure names:"test", "PKG_BATCH_VIDB.PRC_VI_APPLY_CASE_RESULT_CAP"
+2022-03-22 16:28:34 INFO  SPCaller:46 - Try to get config file
+2022-03-22 16:28:34 INFO  SPCaller:54 - ok
+2022-03-22 16:28:39 ERROR SPCaller:85 - 無法啟動「通用連線集區」: oracle.ucp.UniversalConnectionPoolException: 無法從資料來源取得連線: java.sql.SQLRecoverableException: IO 錯誤: The Network Adapter could not establish the connection
+2022-03-22 16:28:39 ERROR SPCaller:85 - 無法啟動「通用連線集區」: oracle.ucp.UniversalConnectionPoolException: 無法從資料來源取得連線: java.sql.SQLRecoverableException: IO 錯誤: The Network Adapter could not establish the connection
+2022-03-22 16:28:39 INFO  SPCaller:88 - All tasks have been ompleted.
